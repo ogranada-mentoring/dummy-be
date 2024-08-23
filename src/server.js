@@ -10,7 +10,7 @@ function main() {
         })
     });
 
-    server.listen(5000, () => {
+    server.listen(process.env.PORT || 5050, () => {
         console.log('server is ready...');
     })
 }
